@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory</title>
+    <meta name="description" content="jeu memori">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Lugrasimo&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <!-- bouton du haut -->
+     <header>
+        <div id="card-left" class="card-info">__</div>
+        <div id="card-right" class="card-info">__</div>
+        
+     </header>
+      <!-- carte -->
+
+     <main>
+        <div class="card" data-name="Orient">
+            <div class="card-wrapper">
+                <!-- dos de la carte -->
+                <div class="card-back">
+                   
+                    <img src="src/img/card-back(1).jpg" alt="">
+                      
+                </div>
+                <!-- avant de la carte -->
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/lamp.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Greece">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/column.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="China">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/vase.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Viking">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/mjolnir.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Greece">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/column.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Viking">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/mjolnir.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Orient">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/lamp.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Egypt">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/pyra.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="Egypt">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/pyra.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-name="China">
+            <div class="card-wrapper">
+                <div class="card-back">
+                    <img src="src/img/card-back(1).jpg" alt="">
+                </div>
+                <div class="card-front">
+                    <video width="540" height="720" autoplay loop muted playsinline>
+                        <source src="src/vids/vase.mp4" type="video/mp4">
+                      </video>
+                </div>
+            </div>
+        </div>
+     </main>
+     <!-- indications -->
+     <footer>
+        <div id="timer-wrapper">
+            <span id="seconds">00</span>:<span id="tens">00</span>
+        </div>
+     </footer>
+
+     <div id="overlay" class="hidden">
+     <div id="winpopup" class="hidden">
+        Bravo !<br>
+        <em>Nombre de coups : <span id="wincounter">0</span><br>
+            <div id="final-time-display">
+                Temps final : <span id="final-time">--:--</span>
+            </div></em>
+   
+        
+        <button id="reload">Rejouer</button>
+    </div>
+    <script src="js/index.js"></script> 
+</body>
+</html>
+
